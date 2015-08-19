@@ -1,0 +1,5 @@
+.ui-icon-logo:after {
+    background-image: url("logo.png");
+    /* Make your icon fit */
+    background-size: 18px 18px;
+}
