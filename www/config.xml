@@ -41,11 +41,7 @@ Gaurav
 <preference name="disable-cursor" value="false" />
 <preference name="android-minSdkVersion" value="7" />
 <preference name="android-installLocation" value="auto" />
-<preference name="SplashScreen" value="screen" />
-<gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="res/screen/android/screen-ldpi-portrait.png" />
-<gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
-<gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="res/screen/android/screen-hdpi-portrait.png" />
-<gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png" />
+<preference name="SplashScreen" value="screen" /> 
 
 <preference name="SplashScreenDelay" value="20000" />
 <gap:splash src="splash.png"/> 
