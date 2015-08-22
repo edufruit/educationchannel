@@ -44,6 +44,6 @@ Gaurav
 <preference name="android-installLocation" value="auto" />
 <preference name="SplashScreen" value="splash" />  
 <preference name="SplashScreenDelay" value="20000" />
-<gap:splash src="splash.png" gap:platform="android"/> 
+<gap:splash src="splash.png" gap:density="ldpi" /> 
 
 </widget>
