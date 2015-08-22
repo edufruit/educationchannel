@@ -21,8 +21,9 @@ Gaurav
 <content src="index.html" />
 <icon src="lotus-buddha.png" />
 
+<gap:plugin name="org.apache.cordova.splashscreen" />  
+<gap:plugin name="org.apache.cordova.contacts"/>
 <gap:platform name="android" />
-<gap:splash src="splash.png"/> 
 <preference name="loglevel" value="DEBUG"/> 
 <preference name='phonegap-version' value='cli-5.1.1'/>
 <preference name="permissions" value="none"/>
@@ -40,10 +41,13 @@ Gaurav
 <preference name="disable-cursor" value="false" />
 <preference name="android-minSdkVersion" value="7" />
 <preference name="android-installLocation" value="auto" />
-<preference name="SplashScreen" value="splash" />
-<preference name="SplashScreenDelay" value="10000" />
+<preference name="SplashScreen" value="screen" />
+<gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="res/screen/android/screen-ldpi-portrait.png" />
+<gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
+<gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="res/screen/android/screen-hdpi-portrait.png" />
+<gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png" />
 
-<gap:plugin name="org.apache.cordova.splashscreen" />  
-<gap:plugin name="org.apache.cordova.contacts"/>
+<preference name="SplashScreenDelay" value="20000" />
+<gap:splash src="splash.png"/> 
 
 </widget>
