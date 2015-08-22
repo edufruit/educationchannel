@@ -19,7 +19,7 @@ Gaurav
 <access origin="*"/>
  
 <content src="index.html" />
-<icon src="lotus-buddha.svg" />
+<icon src="lotus-buddha.png" />
 
 <gap:platform name="android" />
 <gap:plugin name="org.apache.cordova.contacts"/>
