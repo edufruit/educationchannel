@@ -20,8 +20,7 @@ Gaurav
  
 <content src="index.html" />
 <icon src="lotus-buddha.png" />
-
-<gap:plugin name="org.apache.cordova.splashscreen" />  
+<gap:plugin name="cordova-plugin-splashscreen" source="npm"/> 
 <gap:plugin name="org.apache.cordova.contacts"/>
 <gap:platform name="android" />
 <preference name="loglevel" value="DEBUG"/> 
