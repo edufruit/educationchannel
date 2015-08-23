@@ -4,7 +4,7 @@
     background-size: 22px 24px;
 }
 
-.ui-no-round{
-    -webkit-border-radius:0px;
-    border-radius:0px;
+.ui-no-round:after{
+    -webkit-border-radius:0em;
+    border-radius:0em;
 }
