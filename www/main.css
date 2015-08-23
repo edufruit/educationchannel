@@ -3,3 +3,8 @@
     /* Make your icon fit */
     background-size: 22px 24px;
 }
+
+.ui-no-round{
+    -webkit-border-radius:0px;
+    border-radius:0px;
+}
