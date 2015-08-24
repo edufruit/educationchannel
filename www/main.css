@@ -8,3 +8,35 @@
     -webkit-border-radius:0em;
     border-radius:0em;
 }
+
+.nopad {
+	
+	padding: 0px;
+	
+}
+
+.ui-bg-blue {
+	
+	background-color: #081f3f;
+	
+}
+.ui-bg-nav {
+	
+	background: #e4ab16 !important; 
+	font-size: 18px !important; 
+	
+}
+.ui-clean {
+	
+	color: #FFF; 
+	
+}
+.ui-msg {
+	
+	padding:10px;
+	border:1px solid yellow; 
+	background-color:#FFFFBB; 
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	
+}
