@@ -6,14 +6,14 @@ xmlns:gap = "http://phonegap.com/ns/1.0"
 version   = "2.0.0">
 
 
-<name>Navigations</name>
+<name>Education Channel</name>
 
 <description>
-Find it quick
+Education Channel
 </description>
 
 <author href="YOUR URL" email="YOUR EMAIL">
-Gaurav
+Gaurav Yadav
 </author>
 
 <access origin="*"/>
@@ -54,7 +54,7 @@ Gaurav
 <preference name="android-minSdkVersion" value="7" />
 <preference name="android-installLocation" value="auto" />
 <preference name="SplashScreen" value="splash" />  
-<preference name="SplashScreenDelay" value="10000" />
+<preference name="SplashScreenDelay" value="2000" />
 <gap:splash src="splash.png" gap:platform="android" gap:density="ldpi" /> 
 
 </widget>
