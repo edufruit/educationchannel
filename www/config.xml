@@ -19,7 +19,19 @@ Gaurav
 <access origin="*"/>
  
 <content src="index.html" />
-<icon src="lotus-buddha.png" />
+
+<!--<icon src="lotus-buddha.png" />-->
+
+
+<icon src="36.png" gap:platform="android" gap:qualifier="ldpi" />
+<icon src="48.png" gap:platform="android" gap:qualifier="mdpi" />
+<icon src="72.png" gap:platform="android" gap:qualifier="hdpi" />
+<icon src="96.png" gap:platform="android" gap:qualifier="xhdpi" />
+<icon src="144.png" gap:platform="android" gap:qualifier="xxhdpi" />
+<icon src="192.png" gap:platform="android" gap:qualifier="xxhdpi" />
+<icon src="512.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
+
+
 <gap:plugin name="cordova-plugin-splashscreen" source="npm"/> 
 <gap:plugin name="org.apache.cordova.contacts"/>
 <gap:platform name="android" />

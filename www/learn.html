@@ -8,17 +8,21 @@
 <link rel="stylesheet" href="main.css">
 </head>
 <body>
-   
-
-
-<div data-role="page" data-id="foo1">
-  <div data-role="header">
-    <h1>Welcome To My Homepage</h1>
-  </div>
+    
+<div data-role="page" id="pagetwo">
+  
+  
+  <div data-role="panel" id="myPanelDefault"> 
+    <h2>Menu</h2>
+    <p>You can close the panel by clicking outside the panel, pressing the Esc key, by swiping, or by clicking the button below:</p>
+    
+    <a href="#pageone" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext"></a>
+  </div> 
 
 	 
-	<div data-role="header" data-id="foo1"> 
-	  
+	 
+	<div data-role="header" data-id="foo1" data-position="fixed"> 
+ 	
 		<div data-role="navbar" data-iconpos="left">
 	  
 		
@@ -32,7 +36,7 @@
 		  <ul>
 	  
 			 
-			<li><a href="#" data-icon="home">Live</a></li>
+			<li><a href="index.html" data-icon="home">Live</a></li>
 			
 			<li><a href="learn.html" data-transition="slide" data-icon="arrow-r">Learn</a></li>
 			
@@ -47,21 +51,17 @@
 	</div>
   
   
-  <div data-role="footer">
+  <div data-role="footer" id="footer1" data-position="fixed">
     <h1>Learn</h1>
   </div>
+   
 </div> 
 
 
 
 
 
-
-
-
-
-
-
+ 
 
 </body>
 </html>
