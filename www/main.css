@@ -53,7 +53,8 @@
 	border-radius:5px; 
 	
 }
- 
+ .uiw-btn  { 
+	background:none !important; border: none !important; }
  .ui-bg-null {
 	
 	background:none;  
