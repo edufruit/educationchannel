@@ -1,6 +1,6 @@
 .ui-icon-logo:after {
-    background-image: url("logo.png");
-    /* Make your icon fit */
+   /* background-image: url("logo.png");
+     Make your icon fit */
     background-size: 22px 24px;
 }
 
@@ -34,8 +34,8 @@
 .ui-msg {
 	
 	padding:10px;
-	border:1px solid yellow; 
-	background-color:#FFFFBB; 
+	border:2px solid #e1cda6; 
+	background-color:#FFF; 
 	-webkit-border-radius:5px;
 	border-radius:5px; 
 	
