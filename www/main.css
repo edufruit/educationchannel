@@ -25,6 +25,7 @@
 .ui-pad-c {
 	
 	padding-top: 90px;
+	
 	}
 
 .ui-bg-blue {
@@ -50,6 +51,9 @@
 	background-color:#FFF; 
 	-webkit-border-radius:5px;
 	border-radius:5px; 
+	float:left;
+	margin-bottom:10px;
+	
 	
 }
  .uiw-btn  { 
