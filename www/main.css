@@ -56,11 +56,42 @@
 	
 	
 }
+
  .uiw-btn  { 
-	background:none !important; border: none !important; }
+	
+	background:none !important; border: none !important; 
+	
+}
+
  .ui-bg-null {
 	
 	background:none;  
 	
 }
+ 
+  .ui-menu {
+	
+	padding:3px; 
+	float:left; 
+	border-bottom:1px gray solid;
+	
+}
+   
+  .simple {
+	
+	padding:3px; 
+	text-decoration:none;
+	
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
