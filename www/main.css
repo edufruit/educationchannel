@@ -81,7 +81,7 @@
   .simple {
 	 
 	text-decoration:none;
-	font-weight:normal;
+	font-weight:normal !important; 
 	
 }
  
