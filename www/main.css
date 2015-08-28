@@ -71,7 +71,7 @@
  
   .ui-menu {
 	
-	width:100%; 
+	width:98%; 
 	padding:10px; 
 	float:left; 
 	border-top:1px #D8D8D8 solid;
@@ -86,7 +86,12 @@
 }
  
  
+ .ui-panel-inner{
  
+  padding-left:0em !important;
+ 
+ 
+ }
  
  
  
