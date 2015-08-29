@@ -1,0 +1,160 @@
+.ui-icon-logo:after {
+   /* background-image: url("logo.png");
+     Make your icon fit */
+    background-size: 22px 24px;
+}
+
+.ui-no-round:after{
+    -webkit-border-radius:0em;
+    border-radius:0em;
+}
+
+.nopad {
+	
+	padding: 0px;
+	
+}
+
+.logo-pad {
+	
+	padding: 0px;
+	padding-left: 5px;
+	
+}
+
+.ui-pad-c {
+	
+	padding-top: 90px;
+	
+	}
+
+.ui-bg-blue {
+	
+	background-color: #081f3f;
+	
+}
+.ui-bg-nav {
+	
+	background: #e4ab16 !important; 
+	font-size: 18px !important; 
+	
+}
+.ui-clean {
+	
+	color: #FFF; 
+	
+}
+.ui-msg {
+	
+	padding:10px;
+	border:2px solid #e1cda6; 
+	background-color:#FFF; 
+	-webkit-border-radius:5px;
+	border-radius:5px; 
+	float:left;
+	margin-bottom:10px;
+	
+	
+}
+
+ .uiw-btn  { 
+	
+	background:none !important; border: none !important; 
+	
+}
+
+ .ui-bg-null {
+	
+	background:none;  
+	
+}
+ 
+  .ui-menu {
+	
+	width:98%; 
+	padding:10px; 
+	float:left; 
+	border-top:1px #D8D8D8 solid;
+	
+}
+   
+  .simple {
+	 
+	text-decoration:none;
+	font-weight:normal !important; 
+	
+}
+ 
+ 
+ .ui-panel-inner{
+ 
+  padding-left:0em;
+ 
+ 
+ }
+ 
+ .panel_design
+ {
+ background-color:#; overflow:auto;
+ }
+ 
+
+ .image_div
+ {
+ width:100px; height:100px; padding-left:5px; padding-right:5px; float:left; margin-top:0px;
+ }
+ 
+ .image_definition
+ {
+ height:100%; width:100%;
+ }
+ 
+ .name_design
+ {
+ padding-left:5px; width:210px;
+ }
+ 
+ .name_contents
+ {
+ font-size:11px; color:#000;
+ }
+ 
+ .menu_icon
+ {
+ float:left; width:20px; margin-left:5px;
+ }
+ 
+ .logo_design
+ {
+ float:left; width:203px; margin-left:20px; margin-top:8px;
+ }
+ 
+ .learn_button
+ {
+ float:right; margin-right:5px; 
+ 
+ }
+ 
+ .button_pad
+ {
+ padding:15px;
+ 
+ }
+ 
+ .content_header_top
+ {
+ font-size: 12px; width:100%; height:20px; border-bottom:1px solid #ababab; margin-bottom:10px;
+ }
+ 
+ .content_header_date
+ {float:left; width:50%;}
+ 
+ .content_header_subject 
+ {float:right; width:50%;}
+ 
+ .content_image_style
+ {padding:5px 0px 5px 0px; height:100%; width:100%;}
+ 
+ 
+ .content_footer_bottom
+ {float:right; font-size:12px;}
