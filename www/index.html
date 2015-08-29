@@ -2,33 +2,12 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
-<script src="jquery-1.11.3.min.js"></script>
-<script src="jquery.mobile-1.4.5.min.js"></script>
-<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" href="css/main.css">
 
-<script>
-
- 
-	$( document ).on( "pageinit", "#demo-page", function() {
-	
-		
-		$( document ).on( "swipeleft swiperight", "#demo-page", function( e ) {
-			// We check if there is no open panel on the page because otherwise
-			// a swipe to close the left panel would also open the right panel (and v.v.).
-			// We do this by checking the data that the framework stores on the page element (panel: open).
-			if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
-				if ( e.type === "swipeleft"  ) {
-					$( "#right-panel" ).panel( "open" );
-				} else if ( e.type === "swiperight" ) {
-					$( "#left-panel" ).panel( "open" );
-				}
-			}
-		});
-		
-	});
-
-</script>
+<script src="js/swipe_function.js"></script>
 
 
 </head>
@@ -37,7 +16,7 @@
 <div data-role="page" id="demo-page" data-url="demo-page">  
   
   
-  <div data-role="panel" style="background-color:#; overflow:auto;" id="left-panel"   data-position-fixed="true" > 
+  <div data-role="panel" class="panel_design" id="left-panel"   data-position-fixed="true" > 
     
  
 		 
@@ -47,13 +26,13 @@
 				
 				
 					
-					<div style="width:100px; height:100px; padding-left:5px; padding-right:5px; float:left; margin-top:0px;"><img style="height:100%; width:100%;" src="my-pic.jpg"></div>
+					<div class="image_div" ><img class="image_definition" src="res/images/pic3.jpg"></div>
 				 
-					<div style="padding-left:5px; width:210px;">
+					<div class="name_design" >
 					
 					   <div> <b>  Sameer Pratap Chauhan </b> </div> 
 					
-						<div style="font-size:11px; color:#000;">M-9919479687<br> edufruit@gmail.com</div>
+						<div class="name_contents">M-9919479687<br> edufruit@gmail.com</div>
 					
 					</div>
 					
@@ -81,7 +60,7 @@
 		
 				
 		
-		<!--<div> <a href="#demo-page" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext"></a>  </div> -->
+		
   </div> 
 
   
@@ -100,21 +79,21 @@
 			<div data-role="main" class="ui-content nopad ui-bg-blue"> 
 	 
 				<!--first logo to open left menu -->
-				<div style="float:left; width:20px; margin-left:5px;" > 
+				<div class="menu_icon" > 
 				
 					 <a href="#left-panel" class="ui-btn ui-bg-null ui-shadow ui-btn-icon-notext ui-icon-bullets "></a>   
 					 				
 				</div> 
 				
-				<div style="float:left; width:203px; margin-left:20px; margin-top:8px;" > 
+				<div class="logo_design" > 
 				
 				 <img src="logo/logo_in.png" /> 
 				
 				</div> 
 			 
-				<div style="float:right; margin-right:5px; " > 
+				<div class="learn_button" > 
 				
-				<a href="learn.html" data-mini="true" data-icon="search" class="ui-btn ui-shadow" style="padding:15px;"></a> 
+				<a href="learn.html" data-mini="true" data-icon="search" class="ui-btn ui-shadow button_pad"></a> 
 				 
 				</div> 
 			  
@@ -150,9 +129,9 @@
 				<div class="ui-msg"  > 
 					
 					
-					<div style=" font-size: 12px; width:100%; height:20px; border-bottom:1px solid #ababab; margin-bottom:10px;">
-						<div style="float:left; width:50%;"><b> Date 12th Oct </b></div> 
-						<div style="float:right; width:50%;"><b> PHYSICS</b> </div> 
+					<div class="content_header_top">
+						<div class="content_header_date" ><b> Date 12th Oct </b></div> 
+						<div class="content_header_subject" ><b> PHYSICS</b> </div> 
 					</div>
 					
 					
@@ -163,11 +142,11 @@
 					</div>		
 					
 					
-					<div><img style="padding:5px; height:100%; width:100%;" src="my-pic.jpg"></div>
+					<div><img class="content_image_style" src="res/images/my-pic.jpg"></div>
 					
 					
 					<div class="ui-menu"></div> 
-					<div style="float:right; font-size:12px;"><b>Posted By :</b> Mr. Albert Steve (Teacher)</div>
+					<div class="content_footer_bottom"><b>Posted By :</b> Mr. Albert Steve (Teacher)</div>
 					
 					
 					
@@ -178,68 +157,34 @@
 				
 				
 				<div class="ui-msg"  > 
-				
-					<div style=" font-size: 12px; width:100%; height:20px; border-bottom:1px solid #ababab; margin-bottom:10px;">
-							<div style="float:left; width:50%;"><b> Date 12th Oct </b></div> 
-							<div style="float:right; width:50%;"><b> PHYSICS</b> </div> 
-						</div>
-				
 					
+					
+					<div class="content_header_top">
+						<div class="content_header_date" ><b> Date 12th Oct </b></div> 
+						<div class="content_header_subject" ><b> PHYSICS</b> </div> 
+					</div>
+					
+					
+					<div >	
 						Education is the process of facilitating learning. Knowledge, skills, values, beliefs, and habits of a group of people are transferred to other people, 
 						through storytelling, discussion, teaching, training, or research. Education frequently takes place under the guidance of educators, but learners 
 						may also educate themselves in a process called autodidactic learning.
-								
-						
-						<div class="ui-menu"></div> 
-							<div style="float:right; font-size:12px;"><b>Posted By :</b> Mr. Albert Steve (Teacher)</div>
-							
-					
 					</div>		
-						
-						
-						
-						
-				<div class="ui-msg"  > 
-				
-					<div style=" font-size: 12px; width:100%; height:20px; border-bottom:1px solid #ababab; margin-bottom:10px;">
-							<div style="float:left; width:50%;"><b> Date 12th Oct </b></div> 
-							<div style="float:right; width:50%;"><b> PHYSICS</b> </div> 
-						</div>
-				
 					
-						Education is the process of facilitating learning. Knowledge, skills, values, beliefs, and habits of a group of people are transferred to other people, 
-						through storytelling, discussion, teaching, training, or research. Education frequently takes place under the guidance of educators, but learners 
-						may also educate themselves in a process called autodidactic learning.
-								
-						
-						<div class="ui-menu"></div> 
-							<div style="float:right; font-size:12px;"><b>Posted By :</b> Mr. Albert Steve (Teacher)</div>
-							
 					
-				</div>		
-								
-						
-						
-				<div class="ui-msg"  > 
+					<div><img class="content_image_style" src="res/images/my-pic.jpg"></div>
+					
+					
+					<div class="ui-menu"></div> 
+					<div class="content_footer_bottom"><b>Posted By :</b> Mr. Albert Steve (Teacher)</div>
+					
+					
+					
+					
+			  
+			  
+				</div> 
 				
-					<div style=" font-size: 12px; width:100%; height:20px; border-bottom:1px solid #ababab; margin-bottom:10px;">
-							<div style="float:left; width:50%;"><b> Date 12th Oct </b></div> 
-							<div style="float:right; width:50%;"><b> PHYSICS</b> </div> 
-						</div>
-				
-					
-						Education is the process of facilitating learning. Knowledge, skills, values, beliefs, and habits of a group of people are transferred to other people, 
-						through storytelling, discussion, teaching, training, or research. Education frequently takes place under the guidance of educators, but learners 
-						may also educate themselves in a process called autodidactic learning.
-								
-						
-						<div class="ui-menu"></div> 
-							<div style="float:right; font-size:12px;"><b>Posted By :</b> Mr. Albert Steve (Teacher)</div>
-							
-					
-				</div>				
-						
-						
 						
 						
 						
