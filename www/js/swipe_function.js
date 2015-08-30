@@ -31,9 +31,9 @@
 	 
 		// $( "[data-role='header'], [data-role='footer']" ).toolbar();
 		
-		$( "[data-role='header']" ).toolbar();
+	//		$( "[data-role='header']" ).toolbar();
 			  
-	
+	 
 
 /*
 					 
