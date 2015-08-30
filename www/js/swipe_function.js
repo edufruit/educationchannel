@@ -29,12 +29,13 @@
 	 
 		// $( "[data-role='header'], [data-role='footer']" ).toolbar();
 		
-			$( "[data-role='header']" ).toolbar();
+		$( "[data-role='header']" ).toolbar();
+			  
 			  
 		$(document).on('pagebeforecreate', function () {
 		
 			 
-			var panel = $('#left-panel')[0].outerHTML;;	
+			var panel = $('#left-panel')[0].outerHTML;
 		
 			$.mobile.pageContainer.prepend(panel);
 			
