@@ -4,7 +4,10 @@
 	//$( document ).on( "pageinit", "#pageone", function() {
 	$( document ).on( "pageinit", function() {
 	
-		
+	
+/*	 
+ 
+	
 		//$( document ).on( "swipeleft swiperight", "#pageone", function( e ) {
 		$( document ).on( "swipeleft swiperight", function( e ) {
 			// We check if there is no open panel on the page because otherwise
@@ -18,9 +21,8 @@
 				}
 			}
 		});
-		 
- 
- 
+	
+ */
  
 		//$('.headerChild').load('top-menu.html')
 	 
@@ -31,7 +33,11 @@
 		
 		$( "[data-role='header']" ).toolbar();
 			  
-			  
+	
+
+/*
+					 
+ 	  
 		$(document).on('pagebeforecreate', function () {
 		
 			 
@@ -46,10 +52,12 @@
 		});
 		
 		
+ */
 
 	});
 	
-		
+
+ 
 	/*	
 	
 	$( document ).on( "pagecontainershow", function() {
