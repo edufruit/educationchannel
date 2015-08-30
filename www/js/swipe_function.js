@@ -25,8 +25,9 @@
 		//$( "[data-role='navbar']" ).navbar();
 	 
 	 
-		$( "[data-role='header'], [data-role='footer']" ).toolbar();
-			  
+		// $( "[data-role='header'], [data-role='footer']" ).toolbar();
+		
+			$( "[data-role='header']" ).toolbar();
 			  
 		$(document).on('pagebeforecreate', function () {
 		
