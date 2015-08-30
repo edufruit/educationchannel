@@ -13,14 +13,9 @@
 </head>
 <body>
  
- <!--- LIVE PAGE BEGINS HERE ----------------------------------------------------------------------------------------------------->
- 	
-<div data-role="page" id="pageone" data-url="pageone">  
-  
-	
- 	
-	<!--Begin of Top Header -->
-	
+<div id="loginPage" data-role="page">
+
+ 
 	
 	<div data-role="header" data-id="foo1" data-position="fixed" data-tap-toggle="false" data-fullscreen="true"> 
    
@@ -53,7 +48,7 @@
 			 
 				<div class="learn_button" > 
 				
-					<a href="learn.html" data-mini="true" data-icon="search" class="ui-btn ui-shadow button_pad"></a> 
+					<a href="#" data-mini="true" data-icon="search" class="ui-btn ui-shadow button_pad"></a> 
 				 
 				</div> 
 			  	
@@ -64,19 +59,7 @@
 			</div>
 				  
 					  
-			<ul>
-			  
-					 
-					<li><a class="ui-bg-nav" data-transition="fade" href="#pageone">Live</a></li>
-					
-					<li><a class="ui-bg-nav" href="learn.html">Learn</a></li>
-					
-					<li><a class="ui-bg-nav" data-transition="fade" href="#page-2">Q & A</a></li> 
-					
-					<li><a class="ui-bg-nav" href="#page-3">Tests</a></li>
-			  
-			</ul>
-			  
+			 
 	  
 		</div>
   
@@ -88,106 +71,175 @@
 	<!-- End of Top Header -->
 		
  	
+
+<div data-role="main" class="ui-content">
+
 		
-		
-		
-		<!-- Content of Page ONE Begins -->
-		
-	
-		<div data-role="main" class="ui-content">
-			
-		
-		
-			<div data-role="main-wrapper" class="ui-pad-c">
-				
-				<div class="ui-msg"  > 
+			<div data-role="main-wrapper" class="login-pad">
 					
+					 
+				<div data-role="content">
 					
-					<div class="content_header_top">
-						<div class="content_header_date" ><b> Date 12th Oct </b></div> 
-						<div class="content_header_subject" ><b> PHYSICS</b> </div> 
+					 
+					<form id="loginForm">
+					<div data-role="fieldcontain" class="ui-hide-label">
+					<label for="username">User Name:</label>
+					<input type="text" name="username" id="username" value="" placeholder="Username" />
+					</div>
+
+					<div data-role="fieldcontain" class="ui-hide-label">
+					<label for="password">Password:</label>
+					<input type="password" name="password" id="password" value="" placeholder="Password" />
+					</div>
+
+					<input type="button" value="Sign Up" id="submitButton" style=" background-color: #E6B32D; color: #fff; text-indent:0; font-size:16px; " >
+					
+					<div class="groupSeparatorWrapper">
+                    <div class="groupSeparator">
+                        <p>or</p>
+                    </div>
 					</div>
 					
-					
-					<div >	
-						Education is the process of facilitating learning. Knowledge, skills, values, beliefs, and habits of a group of people are transferred to other people, 
-						through storytelling, discussion, teaching, training, or research. Education frequently takes place under the guidance of educators, but learners 
-						may also educate themselves in a process called autodidactic learning.
-					</div>		
-					
-					
-					<div><img class="content_image_style" src="res/images/my-pic.jpg"></div>
-					
-					<div > 
-					
-					<a id="ReadMore" data-role="button" data-mini="true" data-inline="true" >Read More..  </a> 
-				
-					</div> 
-					
-					<div class="ui-menu"></div> 
-					<div class="content_footer_bottom"><b>Posted By :</b> Mr. Albert Steve (Teacher)</div>
-	
-			  
-				</div> 
-				
-				
-				<div class="ui-msg"  > 
-					
-					
-					<div class="content_header_top">
-						<div class="content_header_date" ><b> Date 12th Oct </b></div> 
-						<div class="content_header_subject" ><b> PHYSICS</b> </div> 
-					</div>
-					
-					
-					<div >	
-						Education is the process of facilitating learning. Knowledge, skills, values, beliefs, and habits of a group of people are transferred to other people, 
-						through storytelling, discussion, teaching, training, or research. Education frequently takes place under the guidance of educators, but learners 
-						may also educate themselves in a process called autodidactic learning.
-					</div>		
-					
-					
-					<div><img class="content_image_style" src="res/images/my-pic.jpg"></div>
-					
-					<div > 
-					
-					<a data-role="button" data-mini="true" data-inline="true" >Read More..  </a> 
-				
-					</div> 
-					
-					<div class="ui-menu"></div> 
-					<div class="content_footer_bottom"><b>Posted By :</b> Mr. Albert Steve (Teacher)</div>
-					
+					<input type="button" value="Login with Facebook" style=" background-color: #3b5998; opacity:1; color: #fff; text-indent:0; font-size:16px; " id="submitButton">
+					<input type="button" value="Login with Google" style=" background-color: #983B4A; opacity:1; color: #fff; text-indent:0; font-size:16px; " id="submitButton">
+					 
+					</form>
 
-					
-					
-			  
-			  
-				</div> 
-				
-						
-						
-						
-						
-						
-			</div> <!-- main wrapper end --> 
-				
-				
-				
-				
+				</div>
+
+			</div>
+
+<div data-role="footer">
+<h4>© Education Channel</h4>
+</div>
+
+</div>
+
+<script>
+//$("#loginPage").live("pageinit", function(e) {
+$(document).ready(function(e) {
+//alert('in doc ready');
+//checkPreAuth(); 
+//	$("#submitButton").click(function(){ handleLogin(); });
+ 
+/*
+	function handleLogin() 
+	{
 			
-				
-		</div> <!-- end of main- -->
-	
+		alert('handling your login');
+		 
+		//disable the button so we can't resubmit while we wait
+		
+		$("#submitButton").attr("disabled","disabled");
+		
+		var u = $("#username").val();
+		
+		var p = $("#password").val();
+		
+		console.log("click");
+
+/*
+		if(u != '' && p!= '') 
+		{
 			
-   
+			alert('Authenticating Your Credentials...');
+					
+					$.ajax({
+		type: 'POST',
+		data: 'username='+u+'&password='+p,
+		url: 'http://www.edufruit.com/app_customerdetails.php',
+		success: function(data){
+			
+			console.log(data);
+			
+			alert('Your comment was successfully added');
+			
+						$.mobile.pageContainer.pagecontainer('change', "some.html", {
+										
+									  transition: 'flow',
+									  
+									  reload    : true
+									  
+									});					
+		},
+		error: function(){
+			console.log(data);
+			alert('There was an error adding your comment');
+		}
+	});
+		
 	
-	</div> <!-- end of main PAGE 1 LIVE PAGE -->
+			$.post("http://www.edufruit.com/app_customerdetails.php?method=login&returnformat=json", {username:u,password:p}, function(res) {
+			 
+			 
+			if(res.result == true) 
+			{
+									//store
+									window.localStorage["username"] = u;
+									
+									window.localStorage["password"] = p;
+									
+									window.localStorage["customername"] = res.customername;
+									
+									alert('reply='+res.customername);
+									
+									//$.mobile.changePage("some.html");
+									
+									$.mobile.pageContainer.pagecontainer('change', "some.html", {
+										
+									  transition: 'flow',
+									  
+									  reload    : true
+									  
+									});
+									
+									//$("body").pagecontainer("change", "some.html", {  }); 
+									
+									
+									
+			} 
+			else 
+			{
+				
+				alert('Sorry');
+				
+				navigator.notification.alert("Your login failed", function() {});
+				
+			}
+			
+			$("#submitButton").removeAttr("disabled");
+			},"json");
+				
+				*/
 
-	  
-	 
+				 /*/
+		} 
+		else 
+		{
+			//Thanks Igor!
+			navigator.notification.alert("You must enter a username and password", function() {});
+			
+			$("#submitButton").removeAttr("disabled");
+		
+		}
+		
+		return false;
+
+	}
 
 
+				*/
+
+	$("#submitButton").click(function(e) {
+		 
+		  window.location = "live.html";
+			 					  
+	});
+									
+
+
+});
+</script>
 
 </body>
 </html>

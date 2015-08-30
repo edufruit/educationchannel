@@ -22,6 +22,12 @@
 	
 }
 
+.login-pad {
+	 
+	padding-top: 50px;
+	
+}
+
 .ui-pad-c {
 	
 	padding-top: 90px;
@@ -169,3 +175,45 @@ a {
  
  .content_footer_bottom
  {float:right; font-size:12px;}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   .groupSeparatorWrapper   {
+   
+		text-align:center;
+ 
+	}
+ 
+ 
+ 
+   .groupSeparatorWrapper .groupSeparator p:before,  .groupSeparatorWrapper .groupSeparator p:after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 38%;
+    background: rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
