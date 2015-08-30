@@ -30,7 +30,7 @@
 
 .ui-pad-c {
 	
-	padding-top: 90px;
+	/* padding-top: 90px; */
 	
 	}
 
@@ -64,14 +64,10 @@ a {
 	border:2px solid #e1cda6; 
 	background-color:#FFF; 
 	-webkit-border-radius:5px;
-	border-radius:5px; 
-	float:left;
-	margin-bottom:5px;
+	border-radius:5px;  
 	margin-top: 15px;
-	margin-left: 6px;
-	margin-right: 6px;
-	
-	
+	 
+	   
 }
 
  .uiw-btn  { 
@@ -174,7 +170,7 @@ a {
  
  
  .content_footer_bottom
- {float:right; font-size:12px;}
+ { font-size:12px;}
  
  
  
