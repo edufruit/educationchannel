@@ -10,6 +10,25 @@
 <script src="js/swipe_function.js"></script>
 
 
+<script>
+
+	/*var s = ''+window.location; 
+	
+	alert(s); 
+	
+	if(s.indexOf('questionanswers') > -1)
+	{ 
+	
+	alert(s); 
+	
+		$('#hello').css('background-color', 'blue');
+		
+		
+	}*/
+	 
+</script>
+
+
 </head>
 <body>
  
@@ -25,7 +44,7 @@
 	<div data-role="header" data-id="foo1" data-tap-toggle="false" data-fullscreen="true"> 
    
 	
-		<div data-role="navbar" data-iconpos="left" >
+		<div data-role="navbar" data-iconpos="left">
 	  
 	  
 			<div data-role="main" class="ui-content nopad ui-bg-blue"> 
@@ -71,7 +90,7 @@
 				
 				<li><a class="ui-bg-nav" href="learn.html">Learn</a></li>
 				
-				<li><a class="ui-bg-nav" href="questionanswers.html">Q & A</a></li> 
+				<li><a class="ui-bg-nav" id="hello" href="questionanswers.html">Q & A</a></li> 
 				
 				<li><a class="ui-bg-nav" href="tests.html">Tests</a></li>
 		  
@@ -101,70 +120,56 @@
 		
 			<div data-role="main-wrapper" class="ui-pad-c">
 					
+					
 				<div class="ui-msg"> 
 					
-					<b>TESTS</b>
+					<b>Questions & Answers</b>
 				 
 				</div>					
 				
-				<div class="ui-msg"  > 
-					
-					 
+				
 					<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
-						<li><a data-transition="slide" href="subjects.html">JEE Mains</a></li>
-						<li><a href="#">JEE Advanced</a></li>
-						<li><a href="#">UPTU</a></li> 
+						<li><a data-transition="slide" href="#">Your Subject : PHYSICS, Topic : CAPACITANCE</a></li>
+						
 					</ul>
-					  
-			  <!--
-					<div>	
-						<a class="ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-shadow" data-transition="slideup" href="#pagetwo">JEE Mains</a>
-					</div>		
+				<div class="ui-msg"> 
 					
-					<div>
-						<a class="ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-shadow" href="#">JEE Advanced</a>
-					</div>		
+					<div class="content_header_top">
+						<div class="content_header_date" ><b> Date 12th Oct </b></div> 
+						<div class="content_header_subject" ><b> PHYSICS</b> </div> 
+					</div>
 					
-					<div>
-						<a class="ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-shadow" href="#">UPTU</a>
+					
+					<div><h3>What is Capacitor?</h3>
 					</div>		
 					 
+					<div >  
+						<a id="ReadMore" data-role="button" data-mini="true" data-inline="true" >View Answers</a>  
+						  
+					</div> 
+					
+					<div class="ui-menu"></div> 
+					<div class="content_footer_bottom"><b>Posted By :</b> Mr. Albert Steve (Teacher)</div>
 	
-					<div data-role="collapsible" class="ui-nodisc-icon ui-alt-icon">
-					    <h4>JEE Mains</h4>
-					    <div>	
-							<a class="ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-shadow" href="#">Physics</a>
-							<a class="ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-shadow" href="#">Chemistry</a>
-							<a class="ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-shadow" href="#">Maths</a>
-						</div>		
-					</div>
-			  
-			
-					<div data-role="collapsible" class="ui-nodisc-icon ui-alt-icon">
-					    <h4>JEE Advanced</h4>
-					    <div>	
-							<a class="ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-shadow" href="#">Physics</a>
-							<a class="ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-shadow" href="#">Chemistry</a>
-							<a class="ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-shadow" href="#">Maths</a>
-						</div>		
-					</div>
-			  
-					<div data-role="collapsible" class="ui-nodisc-icon ui-alt-icon">
-					    <h4>UPTU</h4>
-					    <div>	
-							<a class="ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-shadow" href="#">Physics</a>
-							<a class="ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-shadow" href="#">Chemistry</a>
-							<a class="ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-shadow" href="#">Maths</a>
-						</div>		
-					</div>
-			   
-			  
-			  -->
 			  
 				</div> 
 				
 				
-			 
+				<div class="ui-msg"  > 
+					
+				 
+					 
+					<div>  
+						 
+						<a id="ReadMore" data-role="button" data-mini="true" data-inline="true" >Ask a New Question</a>  
+						<a id="ReadMore" data-role="button" data-mini="true" data-inline="true" >Next Question</a>  
+						<a id="ReadMore" data-role="button" data-mini="true" data-inline="true" >Search a Question</a>  
+					</div> 
+				 
+					 
+				</div> 
+				
+						
 						
 						
 						
@@ -184,7 +189,9 @@
 	</div> <!-- end of main PAGE 1 LIVE PAGE -->
 
 	  
-	  
+	 
+
+
 
 </body>
 </html>
