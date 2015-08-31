@@ -84,7 +84,8 @@ a {
  
   .ui-menu {
 	
-	width:98%; 
+	/* width:98% */
+	width:97%; 
 	padding:10px; 
 	float:left; 
 	border-top:1px #D8D8D8 solid;
@@ -124,7 +125,8 @@ a {
  
  .name_design
  {
- padding-left:5px; width:210px;
+ padding-left:5px; 
+ /* width:210px; */
  }
  
  .name_contents
