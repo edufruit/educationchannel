@@ -9,7 +9,7 @@
 
 <script src="js/swipe_function.js"></script>
 
-
+ 
 </head>
 <body>
  
@@ -25,7 +25,7 @@
 	<div data-role="header" data-id="foo1" data-tap-toggle="false" data-fullscreen="true"> 
    
 	
-		<div data-role="navbar" data-iconpos="left" >
+		<div data-role="navbar" data-iconpos="left">
 	  
 	  
 			<div data-role="main" class="ui-content nopad ui-bg-blue"> 
@@ -67,11 +67,11 @@
 			<ul>
 			   
 				 
-				<li><a data-role="none" class="ui-bg-nav" href="live.html">Live</a></li>
+				<li><a class="ui-bg-nav" href="live.html">Live</a></li>
 				
 				<li><a class="ui-bg-nav" href="learn.html">Learn</a></li>
 				
-				<li><a class="ui-bg-nav" href="questionanswers.html">Q & A</a></li> 
+				<li><a class="ui-bg-nav" id="hello" href="questionanswers.html">Q & A</a></li> 
 				
 				<li><a class="ui-bg-nav" href="tests.html">Tests</a></li>
 		  
@@ -100,42 +100,44 @@
 		
 		
 			<div data-role="main-wrapper" class="ui-pad-c">
-				
+			
+					
 				<div class="ui-msg"> 
 					
-					<b>TEST Instructions :</b>
+					<b>Ask Question</b>
 				 
-				</div>		
+				</div>					
 				
+		
+		
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a data-transition="slide" href="question-subjects.html">Change Subject / Topic</a></li>
+					
+				</ul>
 				
+					
+					
 				<div class="ui-msg"> 
-					
 				 
-					
-					<ul data-role="" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+				 
+					<label for="textarea">Please Enter Your Answer Below</label>
+					<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+				 
+					<div>  
 						
-						<li>2 Hours</li>
-						<li>Negative Marking</li>
-						<li>Read all questions carefully before attempting</li>
-						<li>Do not waste your time</li>
+						<label for="file">Attach Image:</label>
+						<input type="file" name="file" id="file" value="">
+						<input type="file" name="file" id="file" value="">
+						<input type="file" name="file" id="file" value="">
 					 
-				   
-				  
-						
-					</ul>
-					 
+						<a id="" data-role="button" data-mini="true" data-inline="true" >Post Answer</a>  
+						  
+					</div> 
+				 
 			  
 				</div> 
 				
-					
-				<div class="ui-msg"> 
-					
-					<a data-role="button" href="start-test.html">START TEST</a>
-				 
-				</div>		
-				
 			 
-						
 						
 						
 						
@@ -154,7 +156,9 @@
 	</div> <!-- end of main PAGE 1 LIVE PAGE -->
 
 	  
-	  
+	 
+
+
 
 </body>
 </html>

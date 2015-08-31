@@ -37,7 +37,7 @@
 				<!--first logo to open PANEL menu -->
 				<div class="menu_icon" > 
 				
-					<a href="#left-panel" class="ui-btn ui-bg-null ui-shadow ui-btn-icon-notext ui-icon-bullets "></a>   
+					<a  href="navigation.html"  class="ui-btn ui-bg-null ui-shadow ui-btn-icon-notext ui-icon-bullets "></a>   
 					 				
 				</div> 
 
@@ -53,7 +53,7 @@
 			 
 				<div class="learn_button" > 
 				
-					<a href="learn.html" data-mini="true" data-icon="search" class="ui-btn ui-shadow button_pad"></a> 
+					<a href="search.html" data-mini="true" data-icon="search" class="ui-btn ui-shadow button_pad"></a> 
 				 
 				</div> 
 			  	
@@ -90,8 +90,6 @@
 		
  	
 		
-		
-		
 		<!-- Content of Page ONE Begins -->
 		
 	
@@ -103,14 +101,14 @@
 				
 				<div class="ui-msg"> 
 					
-					<b>Timer : 3:00:00 hours</b> 
+					<b>Timer : <span id="timerText"></span></b> 
 				 
 				</div>		
 				<div class="ui-msg"> 
 					
 					<div class="content_header_top">
 						<div class="content_header_date" ><b> Date 12th Oct </b></div> 
-						<div class="content_header_subject" ><b> PHYSICS > Capacitance & Resistance > Resistance > Topic 1</b> </div> 
+						<div class="content_header_subject" ><b> PHYSICS</b> </div> 
 					</div>
 					
 					
@@ -170,5 +168,68 @@
 	  
 	  
 
+		<script>
+					
+			String.prototype.toHHMMSS = function () {
+				var sec_num = parseInt(this, 10); // don't forget the second param
+				var hours   = Math.floor(sec_num / 3600);
+				var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+				var seconds = sec_num - (hours * 3600) - (minutes * 60);
+
+				if (hours   < 10) {hours   = "0"+hours;}
+				if (minutes < 10) {minutes = "0"+minutes;}
+				if (seconds < 10) {seconds = "0"+seconds;}
+				
+				//var time    = hours + ' hours' + ':' + minutes + ' mins' + ':' + seconds + ' seconds left';
+				
+				var time    = hours + ' hours ' + minutes + ' mins ' + seconds + ' seconds left';
+				
+				return time;
+				
+			}	
+		
+
+	function convertTime(miliseconds) {
+  var totalSeconds = Math.floor(miliseconds/1000);
+  var hours = Math.floor(totalSeconds/3600);
+  var minutes = Math.floor(totalSeconds/60);
+  var seconds = totalSeconds - minutes * 60;
+  return hours + ':' + minutes + ':' + seconds;
+}
+			
+			var timerText =  document.getElementById("timerText");
+			
+			
+			countdownTime =  10800; //secs = 3 hours = 180 minutes 
+			
+			
+			function countdownHandler() 
+			{
+				
+				if(countdownTime > 0)
+				{
+					
+					countdownTime --;
+				 
+					//timerText.innerHTML = countdownTime;
+					//timerText.innerHTML += '<br>'+ countdownTime.toString().toHHMMSS();
+					timerText.innerHTML = countdownTime.toString().toHHMMSS();
+					 
+					//alert(countdownTime);
+					 
+					//setTimeout('countdownHandler()', 1000);
+					 
+			   }
+				   
+			}
+			
+			setInterval('countdownHandler()', 1000);
+						
+						
+			//countdownHandler();
+
+
+		</script>
+		
 </body>
 </html>
